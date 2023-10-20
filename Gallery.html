@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heaven on Earth Web Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        
+        .img {
+            width: 80%;
+            margin: 100px auto 50px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 30px;
+        }
+        
+        .img img {
+            width: 100%;
+            cursor: pointer;
+        }
+        
+        .img img:hover {
+            transform: rotate(-15deg);
+            border-radius: 20px;
+            box-shadow: 0 32px 7px rgba(68, 77, 136, 0.2);
+        }
+        
+        .full-img {
+            width: 100%;
+            height: 100vh;
+            background: rgba(red, green, blue, alpha);
+            position: none;
+            top: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 100;
+        }
+        
+        .full-img img {
+            width: 90%;
+            max-width: 1000px;
+        }
+        
+        .full-img span {
+            position: absolute;
+            top: 5%;
+            right: 5%;
+            font-size: 30px;
+            color: darkblue;
+            cursor: pointer;
+        }
+        
+        .home {
+            text-decoration: none;
+            color: black;
+            font-family: sans-serif;
+            border-radius: 10px;
+            padding: 2px;
+            background-color: red;
+            border: none;
+            padding-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="full-img" id="fullingbox">
+        <img src="./IMG/63515997-be8c-4754-afa3-2d169df28e26.jpg" id="fulling">
+        <span onclick="closefulling()">X</span>
+
+    </div>
+    <div class="img">
+        <img src="./IMG/Prime.jpg" onclick="openfulling(this.src)">
+        <img src="./IMG/Prime1.jpg" onclick="openfulling(this.src)">
+        <img src="./IMG/Prime2.jpg" onclick="openfulling(this.src)">
+        <img src="./IMG/Prime3.jpg" onclick="openfulling(this.src)">
+        <img src="./IMG/Prime4.jpg" onclick="openfulling(this.src)">
+        <img src="./IMG/Prime5.jpg" onclick="openfulling(this.src)">
+        <img src="./IMG/Prime6.jpg" onclick="openfulling(this.src)">
+        <img src="./IMG/Prime7.jpg" onclick="openfulling(this.src)">
+        <img src="./IMG/Prime8.jpg" onclick="openfulling(this.src)">
+
+        <img src="./IMG/P.jpg" onclick="openfulling(this.src)">
+        <img src="./IMG/P1.jpg" onclick="openfulling(this.src)">
+        <img src="./IMG/P3.jpg" onclick="openfulling(this.src)">
+        <img src="./IMG/p4.jpg" onclick="openfulling(this.src)">
+        <img src="./IMG/P5.jpg" onclick="openfulling(this.src)">
+        <img src="./IMG/P6.jpg" onclick="openfulling(this.src)">
+        <img src="./IMG/p7.jpg" onclick="openfulling(this.src)">
+        <img src="./IMG/p8.jpg" onclick="openfulling(this.src)">
+        <img src="./IMG/p9.jpg" onclick="openfulling(this.src)">
+
+        <img src="./IMG/pp.jpg" onclick="openfulling(this.src)">
+        <img src="./IMG/pp1.jpg" onclick="openfulling(this.src)">
+        <img src="./IMG/pp2.jpg" onclick="openfulling(this.src)">
+        <img src="./IMG/pp3.jpg" onclick="openfulling(this.src)">
+        <img src="./IMG/pp4.jpg" onclick="openfulling(this.src)">
+        <img src="./IMG/pp5.jpg" onclick="openfulling(this.src)">
+        <img src="./IMG/pp6.jpg" onclick="openfulling(this.src)">
+        <img src="./IMG/pp7.jpg" onclick="openfulling(this.src)">
+        <img src="./IMG/pp8.jpg" onclick="openfulling(this.src)">
+        <img src="./IMG/pp9.jpg" onclick="openfulling(this.src)">
+        <img src="./IMG/ppp.jpg" onclick="openfulling(this.src)">
+        <img src="./IMG/ppp1.jpg" onclick="openfulling(this.src)">
+        <img src="./IMG/ppp3.jpg" onclick="openfulling(this.src)">
+
+
+
+
+
+
+
+    </div>
+
+    <a class="home" href="./index.html">Home page</a>
+
+    <script>
+        var fullingbox = document.getElementById("fullingbox");
+        var fulling = document.getElementById("fulling");
+
+        function openfulling(pic) {
+            fullingbox.style.display = "flex";
+            fulling.src = pic;
+        }
+
+        function closefulling() {
+            fullingbox.style.display = "none";
+        }
+    </script>
+</body>
+
+</html>
